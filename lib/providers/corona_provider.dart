@@ -36,8 +36,8 @@ class CoronaProvider with ChangeNotifier {
 
     world = WorldModel(
       confirmed: resultPositive['value'],
-      deaths: resultRecovered['value'],
-      recovered: resultDeaths['value'],
+      recovered: resultRecovered['value'],
+      deaths: resultDeaths['value'],
     );
     notifyListeners();
   }
